@@ -1,0 +1,101 @@
+<div class="flex items-center justify-center mt-20">
+    <!-- Cambia el tamaño de la imagen con las clases w-40 y h-40 sin afectar otros elementos -->
+    <img src="20241208_143024.jpg" alt="Imagen redonda" class="w-60 h-60 rounded-full object-cover">
+</div>
+<div>
+    <!-- Cambia el tamaño del texto con una clase específica sin afectar la imagen -->
+    <h1 class="flex item-center justify-center mt-5 text-3xl "><strong>Acerca de mi</strong></h1>
+    <h3 class="flex item-center justify-center mt-5 text-1xl text-center">Mi nombre es Nicolas Galleguillos, tengo 20 
+    años y vivo en antofagasta chile.<br>Actualmente soy un estudiante de tercer año de la carrera ingenieria civil en
+    <br>computacion informatica, en la Universidad Catolica del Norte.<br>Forman parte
+    de mis intereses el desarrollo de software <br> y el desarrollo de videojuegos</h3>
+
+    <section class="section skills text-center mt-40">
+        <div class="container mx-auto px-4">
+            <div class="box p-4">
+                <div class="content">
+                    <div class="flex justify-center gap-5">
+                        <div class="w-1/3 p-2 border border-black rounded-lg">
+                            <h2 class = "text-2xl"><strong>Habilidades blandas</strong></h2>
+                            <h3><br>Comunicativo <br> Flexible <br> Responsable <br> Empatico <br> Adaptable <br> Pensamiento critico
+                            <br> Trabajo en Equipo <br> Aprendizaje rapido <br> detallista <br> proactivo </h3>
+                        </div>
+                        <div class="w-1/3 p-2 border border-black rounded-lg">
+                            <h2 class = "text-2xl"><strong>Lenguajes</strong></h2>
+                            <h3><br>c#<br>java<br>c++<br>python<br>Html<br>javascript<br>css<br></h3>
+                        </div>
+                        <div class="w-1/3 p-2 border border-black rounded-lg">
+                            <h2 class = "text-2xl"><strong>Tecnologias</strong></h2>
+                            <h3><br> Unity <br> Angular <br> github <br> Asp .Net core <br> My Sql <br> Figma</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div>
+        <h1 class="flex item-center justify-center mt-40 text-3xl "><strong>Proyectos Destacados</strong></h1>
+        <div class="flex item-center justify-center mt-20">
+
+
+            <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a >
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Proyecto de videojuego 2D en Unity</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 mt-10">Proyecto hecho en un equipo de 5 personas, 
+                para el ramo "Proyecto Integrador Programacion Avanzada", con el cargo de programador y diseñador de niveles.</p>
+                <a href="https://github.com/JoseAcuna0/Polystation_Corps_2.0.git" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Ir
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+<div class="flex items-center justify-center mt-80">
+    <h1 class="mr-4 text-3xl"><strong>Link a Github</strong></h1>
+    <a href="https://github.com/NicolasGO2112">
+        <img src="descarga.png" alt="Imagen redonda" class="w-30 h-30 rounded-full object-cover">
+    </a>
+</div>
+
+<div class="flex flex-col items-center justify-center mt-80 gap-4">
+    <h1 class="text-3xl"><strong>Contactame</strong></h1>
+
+    <h3 class="mt-10">Nombre</h3>
+    <div class="w-2/3">
+        <input type="text" id="nombre" class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
+
+    <h3>Correo</h3>
+    <div class="w-2/3">
+        <input type="text" id="correo" class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
+
+    <h3>Mensaje</h3>
+    <div class="w-2/3">
+        <input type="text" id="mensaje" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    </div>
+
+    <button (click)="sendMessage()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 mt-10">
+        Enviar
+    </button>
+
+    <!-- Mensajes de estado -->
+    <div *ngIf="isSending" class="text-lg text-yellow-500">Enviando...</div>
+    <div *ngIf="isSent" class="text-lg text-green-500 transition-opacity duration-1000 opacity-100">Enviado</div>
+</div>
+
+
+
+
+
+
+
+<div class = "mt-40"></div>
